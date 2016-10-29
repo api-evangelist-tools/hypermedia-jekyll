@@ -1,0 +1,33 @@
+rel: urn:x-resource:schema:http://kin-lane.github.io/story/schemas/story.json
+properties:
+  totalItems: 1
+  currentCount: 1
+entities:
+  - rel: urn:x-resource:name:story
+    class: story
+    properties:
+      id: 1
+      name: Jekyll
+      body: Jekyll is a simple, blog-aware, static site generator.
+      chapter:
+        name: One - The why and how.
+        image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-plan.png
+      images: []
+      tags:
+        - tag: Story
+        - tag: Hypermedia
+        - tag: Jekyll
+      entities:
+        - rel: urn:x-resource:name:chapter
+          href: https://api-evangelist-tools.github.io/hypermedia-jekyll/
+          class: category
+    links:
+      - rel: self
+        href: https://raw.githubusercontent.com/api-evangelist-tools/hypermedia-jekyll/gh-pages/_data/jekyll.yaml
+      - rel: prev
+        href: https://raw.githubusercontent.com/api-evangelist-tools/hypermedia-jekyll/gh-pages/_data/about.yaml
+      - rel: next
+        href: https://raw.githubusercontent.com/api-evangelist-tools/hypermedia-jekyll/gh-pages/_data/hypermedia.yaml
+links:
+  - rel: index
+    href: https://api-evangelist-tools.github.io/hypermedia-jekyll/
