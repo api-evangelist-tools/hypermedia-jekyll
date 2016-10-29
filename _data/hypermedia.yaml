@@ -1,0 +1,33 @@
+rel: urn:x-resource:schema:http://kin-lane.github.io/story/schemas/story.json
+properties:
+  totalItems: 1
+  currentCount: 1
+entities:
+  - rel: urn:x-resource:name:story
+    class: story
+    properties:
+      id: 1
+      name: Hypermedia
+      body: In my mind, there are two key things that make hypermedia APIs different from common web APIs: Shared, common way that developers can communicate with the API. Guiding developers with what actions they can take along the way.
+      chapter:
+        name: One - The why and how.
+        image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-plan.png
+      images: []
+      tags:
+        - tag: Story
+        - tag: Hypermedia
+        - tag: Jekyll
+      entities:
+        - rel: urn:x-resource:name:chapter
+          href: https://api-evangelist-tools.github.io/hypermedia-jekyll/
+          class: category
+    links:
+      - rel: self
+        href: https://raw.githubusercontent.com/api-evangelist-tools/hypermedia-jekyll/gh-pages/_data/hypermedia.yaml
+      - rel: prev
+        href: https://raw.githubusercontent.com/api-evangelist-tools/hypermedia-jekyll/gh-pages/_data/jekyll.yaml
+      - rel: next
+        href: https://raw.githubusercontent.com/api-evangelist-tools/hypermedia-jekyll/gh-pages/_data/notsure.yaml
+links:
+  - rel: index
+    href: https://api-evangelist-tools.github.io/hypermedia-jekyll/

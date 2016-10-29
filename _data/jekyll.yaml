@@ -7,8 +7,8 @@ entities:
     class: story
     properties:
       id: 1
-      name: About This Story
-      body: This is story about telling a story using Hypermedia and Jekyll. I want to this to be static, but be YAML driven.
+      name: Jekyll
+      body: Jekyll is a simple, blog-aware, static site generator.
       chapter:
         name: One - The why and how.
         image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-plan.png
@@ -23,11 +23,11 @@ entities:
           class: category
     links:
       - rel: self
-        href: http://story.api.kinlane.com/storys/1683/
+        href: https://raw.githubusercontent.com/api-evangelist-tools/hypermedia-jekyll/gh-pages/_data/jekyll.yaml
+      - rel: prev
+        href: https://raw.githubusercontent.com/api-evangelist-tools/hypermedia-jekyll/gh-pages/_data/about.yaml
+      - rel: next
+        href: https://raw.githubusercontent.com/api-evangelist-tools/hypermedia-jekyll/gh-pages/_data/hypermedia.yaml
 links:
-  - rel: self
-    href: https://api-evangelist-tools.github.io/hypermedia-jekyll/self/
-  - rel: next
-    href: https://api-evangelist-tools.github.io/hypermedia-jekyll/next/
-  - rel: up
-    href: https://api-evangelist-tools.github.io/hypermedia-jekyll/up/
+  - rel: index
+    href: https://api-evangelist-tools.github.io/hypermedia-jekyll/

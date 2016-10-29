@@ -27,7 +27,7 @@ title: Hypermedia Jekyll
     <td>
       <ul>
       {% for link in store.links %}
-        <li>{{ link.self }} - {{ link.href }}</li>
+        <li>{{ link.rel }} - {{ link.href }}</li>
       {% endfor %}
       </ul>
     </td>
