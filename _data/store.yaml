@@ -4,31 +4,31 @@ properties:
   totalItems: 1
   currentCount: 1
 entities:
-- rel: urn:x-resource:name:story
-  class: story
-  properties:
-    id: 1
-    name: About This Story
-    body: This is story about telling a story using Hypermedia and Jekyll. I want to this to be static, but be YAML driven.
-    chapter:
-      name: One - The why and how.
-      image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-plan.png
-    images: []
-    tags:
-    - tag: Story
-    - tag: Hypermedia
-    - tag: Jekyll
-    entities:
-    - rel: urn:x-resource:name:chapter
-      href: https://api-evangelist-tools.github.io/hypermedia-jekyll/
-      class: category
-  links:
-    rel: self
-    href: http://story.api.kinlane.com/storys/1683/
+  - rel: urn:x-resource:name:story
+    class: story
+    properties:
+      id: 1
+      name: About This Story
+      body: This is story about telling a story using Hypermedia and Jekyll. I want to this to be static, but be YAML driven.
+      chapter:
+        name: One - The why and how.
+        image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-plan.png
+      images: []
+      tags:
+        - tag: Story
+        - tag: Hypermedia
+        - tag: Jekyll
+      entities:
+        - rel: urn:x-resource:name:chapter
+          href: https://api-evangelist-tools.github.io/hypermedia-jekyll/
+          class: category
+    links:
+      rel: self
+      href: http://story.api.kinlane.com/storys/1683/
 links:
-- rel: self
-  href: https://api-evangelist-tools.github.io/hypermedia-jekyll/self/
-- rel: next
-  href: https://api-evangelist-tools.github.io/hypermedia-jekyll/next/
-- rel: up
-  href: https://api-evangelist-tools.github.io/hypermedia-jekyll/up/
+  - rel: self
+    href: https://api-evangelist-tools.github.io/hypermedia-jekyll/self/
+  - rel: next
+    href: https://api-evangelist-tools.github.io/hypermedia-jekyll/next/
+  - rel: up
+    href: https://api-evangelist-tools.github.io/hypermedia-jekyll/up/
