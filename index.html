@@ -4,20 +4,32 @@ title: Hypermedia Jekyll
 ---
 
 <h1>Hypermedia Jekyll</h1>
-<p></p>
-
+<p>This is a hypermedia Jekyll project.</p>
 <center>
-<table width="85%" border="1" cellpadding="3" cellspacing="2">
+<table width="85%" border="0" cellpadding="3" cellspacing="2">
   {% for store in site.data.store.entities %}
-  <tr>
-    <td>
-      <strong>{{ store }}
-    </td>
-  </tr>
   <tr>
     <td>
       <strong>{{ store.properties.name }}</strong><br />
       {{ store.properties.body }}
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+      {% for tag in store.properties.tags %}
+        <li>{{ tag }}</li>
+      {% endfor %}
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+      {% for link in store.links %}
+        <li>{{ link.self }} - {{ link.href }}</li>
+      {% endfor %}
+      </ul>
     </td>
   </tr>
   {% endfor %}
