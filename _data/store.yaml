@@ -22,8 +22,8 @@ entities:
           href: https://api-evangelist-tools.github.io/hypermedia-jekyll/
           class: category
     links:
-      rel: self
-      href: http://story.api.kinlane.com/storys/1683/
+      - rel: self
+        href: http://story.api.kinlane.com/storys/1683/
 links:
   - rel: self
     href: https://api-evangelist-tools.github.io/hypermedia-jekyll/self/
