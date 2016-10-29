@@ -11,9 +11,13 @@ title: Hypermedia Jekyll
   {% for store in site.data.store %}
   <tr>
     <td>
+      <strong>{{ store }}
+    </td>
+  </tr>
+  <tr>
+    <td>
       <strong>{{ store.properties.name }}</strong><br />
       {{ store.properties.body }}
-    </td>
     </td>
   </tr>
   {% endfor %}
