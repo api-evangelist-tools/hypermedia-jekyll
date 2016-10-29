@@ -8,7 +8,7 @@ entities:
     properties:
       id: 1
       name: Hypermedia
-      body: In my mind, there are two key things that make hypermedia APIs different from common web APIs: Shared, common way that developers can communicate with the API. Guiding developers with what actions they can take along the way.
+      body: In my mind, there are two key things that make hypermedia APIs different from common web APIs and provide a shared, common way that developers can communicate with the API which helps guide developers with what actions they can take along the way.
       chapter:
         name: One - The why and how.
         image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-plan.png
